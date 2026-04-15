@@ -44,7 +44,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 999;
     background: rgba(0,0,0,0.75);
     backdrop-filter: blur(6px);
     padding: 18px 50px;
@@ -146,6 +146,7 @@ nav a:hover { color: var(--fg); }
 .players-wrapper {
     position: relative;
     display: inline-block;
+    z-index: 999;
 }
 
 #jugadores {
@@ -412,6 +413,12 @@ section h3, .renders h3, #stats-title {
     letter-spacing: 3px;
 }
 
+@media (max-width: 600px) {
+    #stats-title{
+        font-size: 30px;
+    }
+}
+
 section p {
     color: var(--muted);
     font-size: 16px;
@@ -588,15 +595,15 @@ footer {
     }
 
     .hero h3{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .hero p{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .ip{
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .discord{
@@ -822,6 +829,7 @@ footer {
 }
 
 .leaderboard-card {
+    position: relative;
     flex: 1; 
     min-width: 300px;
     background: rgba(255, 255, 255, 0.02);
@@ -829,12 +837,14 @@ footer {
     border-radius: 12px;
     padding: 25px;
     transition: all 0.3s ease;
+    z-index: 1;
 }
 
 .leaderboard-card:hover {
     border-color: var(--accent);
     background: rgba(255, 255, 255, 0.04);
     transform: translateY(-5px);
+    z-index: 100;
 }
 
 .card-header {
@@ -876,6 +886,7 @@ footer {
 .leaderboard-list {
     display: flex;
     flex-direction: column;
+    z-index: 1;
     gap: 12px;
 }
 

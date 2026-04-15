@@ -19,7 +19,7 @@
   <meta name="twitter:image" content="hd_logo.png">
 
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?version=2" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <title>Toms3 Anarchy - Minecraft Server</title>
 </head>
