@@ -42,9 +42,8 @@
     <nav>
       <a href="#" id="selected">Home</a>
       <a href="leaderboards">Leaderboards</a>
-      <a href="vote">Vote&nbsp;us</a>
-      <a href="https://x.com/tomsanarchy" target="_blank">Twitter</a>
-      <a href="https://discord.gg/toms3" target="_blank">Discord</a>
+      <a href="vote">Vote us</a>
+      <a href="about">Contact & Info</a>
     </nav>
   </div>
 </header>
@@ -335,11 +334,11 @@
   <div class="gallery">
     <div class="gallery-img">
         <img src="renders/render2.png" alt="Render 2">
-        <p id="subtitle">Isometric spawn 1000x1000 <b>(03/08)</b></p>
+        <p id="subtitle">Isometric spawn 2000x2000 <b>(03/08)</b></p>
     </div>
     <div class="gallery-img">
         <img src="renders/render1.png" alt="Render 1">
-        <p id="subtitle">Spawn 1000x1000 <b>(04/11)</b></p>
+        <p id="subtitle">Spawn 2000x2000 <b>(04/11)</b></p>
     </div>
   </div>
 </section>

@@ -7,6 +7,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Toms3 Anarchy - Leaderboards">
+  <meta property="og:description" content="Toms3's Top 10 Leaderboards with no resets. ">
+  <meta property="og:image" content="hd_logo.png">
+  <meta property="og:url" content="https://www.toms3.cc">
+  <meta property="og:type" content="website">
+
+  <meta name="theme-color" content="#60e438">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Toms3 Anarchy - Leaderboards">
+  <meta name="twitter:description" content="Minecraft Anarchy server.">
+  <meta name="twitter:image" content="hd_logo.png">
+
   <link rel="stylesheet" href="styles.css?version=2" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -22,10 +35,9 @@
   <div class="header-right">
     <nav>
       <a href="index">Home</a>
-      <a href="leaderboards" id="selected">Leaderboards</a>
-      <a href="vote">Vote&nbsp;us</a>
-      <a href="https://x.com/tomsanarchy" target="_blank">Twitter</a>
-      <a href="https://discord.gg/toms3" target="_blank">Discord</a>
+      <a href="#" id="selected">Leaderboards</a>
+      <a href="vote">Vote us</a>
+      <a href="about">Contact & Info</a>
     </nav>
   </div>
 </header>

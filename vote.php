@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Toms3 Anarchy - Vote us">
+    <meta property="og:description" content="Official voting portal for Toms3 Anarchy. Support the project's visibility.">    
+    <meta property="og:image" content="hd_logo.png">
+    <meta property="og:url" content="https://www.toms3.cc">
+    <meta property="og:type" content="website">
+
+    <meta name="theme-color" content="#60e438">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Toms3 Anarchy - Vote us">
+    <meta name="twitter:description" content="Minecraft Anarchy server.">
+    <meta name="twitter:image" content="hd_logo.png">
     <title>Toms3 Anarchy - Vote</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">

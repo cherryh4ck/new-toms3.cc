@@ -398,7 +398,7 @@ section {
     padding: 0 30px 30px;
 }
 
-section h3, .renders h3, #stats-title {
+section h3, .renders h3, #stats-title, #mini-title {
     font-size: 26px;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -1030,4 +1030,74 @@ footer {
         width: 100%;
         max-width: 450px;
     }
+}
+
+/* contact & info */
+.card-description {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.about-box {
+    margin-top: 25px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.donation-box {
+    padding: 15px;
+    background: rgba(192, 57, 43, 0.1);
+    border: 1px solid rgba(192, 57, 43, 0.2);
+}
+
+.box-text {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #eee;
+    font-family: monocraft, monospace;
+}
+
+.info-icon {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.card-text-main {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.card-text-secondary {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+.github-link-box {
+    font-family: monocraft, monospace;
+    letter-spacing: 2px;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.github-link-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent);
 }
