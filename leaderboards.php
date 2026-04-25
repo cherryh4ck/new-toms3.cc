@@ -36,8 +36,9 @@
     <nav>
       <a href="index">Home</a>
       <a href="#" id="selected">Leaderboards</a>
-      <a href="vote">Vote us</a>
+      <a href="chat">Chat</a>
       <a href="about">Contact & Info</a>
+      <a href="vote">Vote</a>
     </nav>
   </div>
 </header>

@@ -34,10 +34,13 @@
   </div>
   <div class="header-right">
     <nav>
+      <nav>
       <a href="index">Home</a>
       <a href="leaderboards">Leaderboards</a>
-      <a href="vote">Vote us</a>
-      <a href="about" id="selected">Contact & Info</a>
+      <a href="chat">Chat</a>
+      <a href="#" id="selected">Contact & Info</a>
+      <a href="vote">Vote</a>
+    </nav>
     </nav>
   </div>
 </header>

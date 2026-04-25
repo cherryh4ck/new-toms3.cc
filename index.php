@@ -42,8 +42,9 @@
     <nav>
       <a href="#" id="selected">Home</a>
       <a href="leaderboards">Leaderboards</a>
-      <a href="vote">Vote us</a>
+      <a href="chat">Chat</a>
       <a href="about">Contact & Info</a>
+      <a href="vote">Vote</a>
     </nav>
   </div>
 </header>
@@ -57,7 +58,7 @@
     </p>
 
     <div class="ip"><span id="status">Loading...</span><div class="players-wrapper">
-    <span id="jugadores"></span>
+    <span id="jugadores">Loading...</span>
     <div id="players-list" class="players-popup">
         <div class="popup-header">Players Online</div>
         <div id="players-container">Loading...</div>
@@ -193,6 +194,8 @@
   <script>
     let lastUpdateTimestamp = null;
     let debug = true;
+    
+    let peak_player_count = 0;
 
     function getPlayerCount(){
       fetch('php/getPlayerCount.php')
@@ -207,10 +210,10 @@
             }
 
             if (data.player_count != 1) {
-              document.getElementById('jugadores').innerHTML = `${data.player_count} players connected`;
+              document.getElementById('jugadores').innerHTML = `${data.player_count} players online (${peak_player_count} peak)`;
             }
             else{
-              document.getElementById('jugadores').innerHTML = `${data.player_count} player connected`;
+              document.getElementById('jugadores').innerHTML = `${data.player_count} player online (${peak_player_count} peak)`;
             }
         })
         .catch(error => console.error('Error al obtener jugadores:', error));
@@ -269,6 +272,8 @@
             document.getElementById('unique-players').textContent = data.unique_joins;
             document.getElementById('world-size').textContent = data.world_size + "GB";
             document.getElementById('server-uptime').textContent = data.uptime;
+            peak_player_count = data.peak_player_count;
+            getPlayerCount();
 
             let tps = parseFloat(data.tps);
             if (tps >= 16) {
@@ -326,7 +331,6 @@
     setInterval(updateTimeAgo, 1000);
     refreshData();
     getPlayers();
-    getPlayerCount();
   </script>
 </div>
 <section class="renders">
@@ -365,7 +369,7 @@
     <b>Anticheat</b>
     <br>
     Players are allowed to use cheats and all sort of modifications. However, certain movement exploits and specific cheats are limited.
-    Macekill is also patched.
+    We are currently using GrimAC, which is the same anti-cheat that 2b2t and 9b9t use. Macekill is also patched.
     <br><br>
     <b>Chat</b>
     <br>
@@ -373,7 +377,7 @@
     <br>
     The default "Kicked for spamming" kick is enabled to prevent excessive spam.
     <br>
-    Greentext is also enabled.
+    Greentext (>) and redtext (!) are also enabled.
     <br><br>
     <b>Monsters</b>
     <br>
@@ -423,7 +427,7 @@
     <br>
     Only /kill and /suicide are enabled.
     <br>
-    We also have other commands like /stats, /joindate, /playtime and so on.
+    We also have other commands like /stats, /joindate, /playtime, /lastseen and so on.
     <br>
     Please refer to the /help command to know more.
   </p>
